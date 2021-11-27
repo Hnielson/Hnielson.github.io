@@ -1,0 +1,62 @@
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 50px 1fr;
+    font-family: sans-serif;
+    background-color: brown;
+}
+h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    background-color: yellow;
+    border-radius: 10px;
+    color:purple;
+}
+h3 {
+    color: purple;
+    font-family: cursive;
+}
+#input-wrapper, #edit-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+}
+#edit-wrapper {
+    display: none;
+}
+#homework, #add-work, #subject, #duedate, #urgency, #edit-add-work,
+#edit-homework, #edit-subject, #edit-duedate, #edit-urgency, .edit-button,
+.delete-button, #placeholder, #edit-placeholder {
+    margin: 5px;
+    font-family: fantasy;
+    font-size: larger;
+    border-radius: 3px;
+    color:rgb(230, 166, 201);
+}
+::placeholder {
+    color:rgb(230, 166, 201);
+}
+
+#box {
+    margin: 20px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: yellow;
+    border: 20px solid salmon; 
+    border-radius: 5px;
+    color: purple;
+}
+#homework-list {
+    font-weight: bold;
+    font-size: larger;
+    font-family: cursive;
+    
+}
